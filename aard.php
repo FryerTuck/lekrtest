@@ -3,7 +3,7 @@ namespace Anon;
 
 class lekrtest
 {
-    function __init()
+    static function __init()
     {
         dump("olo");
         permit::clan("nois");
