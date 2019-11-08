@@ -1,4 +1,10 @@
 <?
 namespace Anon;
 
-permit::clan("nois");
+class lekrtest
+{
+    function __init()
+    {
+        permit::clan("nois");
+    }
+}
