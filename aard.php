@@ -1,4 +1,4 @@
 <?
 namespace Anon;
 
-permit::clan("work");
+permit::clan("nois");
