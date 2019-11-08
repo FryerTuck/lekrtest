@@ -5,6 +5,6 @@ class lekrtest
 {
     static function __init()
     {
-        permit::clan("nois");
+        permit::clan("work");
     }
 }
