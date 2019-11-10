@@ -5,7 +5,7 @@
 > - the source-code is in the [dist folder](/lekrtest/dist/)
 > - the explanation is in the [summery file](/lekrtest/summery.md)
 
-<br><br>
+<br>
 
 
 ## Assignment
