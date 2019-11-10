@@ -10,6 +10,12 @@ The objective is to create a great looking card which would entice our customers
 #### The card must have the following information pieces:
 1. Establishment Image
 2. Establishment Name
-3. Establishment Extract ( shortened version of description max two lines)
-4. View More button ( has to link to establishment )
+3. Establishment Extract (shortened version of description max two lines)
+4. View More button (has to link to establishment)
 5. Special banner with text “Premium”
+
+#### Optional additions to card:
+- Reviews
+- Price
+- … anything else you feel would help the user experience
+
