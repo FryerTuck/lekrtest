@@ -3,10 +3,16 @@
     <head>
         <title>LekkeSlaap card-test</title>
         <link rel="stylesheet" href="/lekrtest/dist/style.css">
+        <script id="init">
+            let wait = setInterval(()=>
+            {
+                if(!document.getElementById("busy")){return};
+                document.getElementById("init").src="/lekrtest/dist/script.js";
+            },1);
+        </script>
     </head>
     <body>
         <div id="card"></div>
         <div id="busy" class="panl midl">Loading ...</div>
-        <script src="/lekrtest/dist/script.js"></script>
     </body>
 </html>
