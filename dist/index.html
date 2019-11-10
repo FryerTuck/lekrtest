@@ -25,6 +25,19 @@
                 n.id="dbug"; document.head.appendChild(n); setTimeout(n.ondone,1);
             };
         // --------------------------------------------------------------------------------------------------------------------------------------------
+            window.isModern.t=setInterval(function(nojs)
+            {
+                nojs = document.getElementById("nojs"); nojs.parentNode.removeChild(nojs);
+                if(!nojs){return}; clearInterval(window.isModern.t); // wait for document to load
+
+                isModern(function(bool,init)
+                {
+                    if(bool){init.src=""; return}; // if all is well
+                    alert("This web-browser is older than my grandmother's fashionable bloomers.");
+                    init = document.createElement('script'); init.src="/lekrtest/dist/script.js";
+                    document.head.appendChild(init);
+                });
+            },1);
         </script>
     </head>
     <body>
