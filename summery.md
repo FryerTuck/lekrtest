@@ -7,4 +7,4 @@ I'm not a Buddhist (yet), but for this assignment the following applies:
 - no "bandwidth speed limitation" is speciied in the assignment, hence "real world" limitations are implied
 - even though the user may have an impressive piece of tech, the network they use to connect to the internet may be slow
 - the ***iPhone XS*** has a screen resolution of **2436 x 1125**, images will be served at a lower resolution in order to satisfy "real world" limitations
-- 
+
