@@ -19,3 +19,6 @@ The objective is to create a great looking card which would entice our customers
 - Price
 - … anything else you feel would help the user experience
 
+### Assessment Criteria
+We will be looking at the quality of the code (css/scss, html, semantics, readability) as well as your design. 
+What design decisions you have made and why you have made them. Continue to page 2. 
