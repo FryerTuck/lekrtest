@@ -21,4 +21,13 @@ The objective is to create a great looking card which would entice our customers
 
 ### Assessment Criteria
 We will be looking at the quality of the code (css/scss, html, semantics, readability) as well as your design. 
-What design decisions you have made and why you have made them. Continue to page 2. 
+What design decisions you have made and why you have made them. 
+
+### Additional information
+All the raw data can be acquired at https://www.lekkeslaap.co.za/akkommodasie/tsala-treetop-lodge
+All our images can easily be manipulated to give you the size/ratio you want by simply copying the image url and changing the h= and w= attributes. 
+>Example: 
+>https://travelground.imgix.net/AAEAAQAAAAAAAAAAAAAAJDc2NDdjZWE5LTM4YWQtNDY4Yy05MmEzLWI3MDM1MTdmYWE2Yw?fit=crop&w=638&h=440&bg=000000&auto=enhance,compress&q=80
+
+
+
