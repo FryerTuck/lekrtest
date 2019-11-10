@@ -32,14 +32,14 @@
         <noscript id="nojs">
             <meta http-equiv="refresh" content="1; URL=/lekrtest/dist/nojs"/>
         </noscript>
-        <script id="boot"></script>
+        <script id="init"></script>
         <script>
             var nojs = document.getElementById("nojs"); nojs.parentNode.removeChild(nojs);
-            var boot = document.getElementById("boot");
+            var init = document.getElementById("init");
 
             isModern(function(bool)
             {
-                if(bool){boot.src="/lekrtest/dist/script.js"; return};
+                if(bool){init.src="/lekrtest/dist/script.js"; return};
                 alert("This web-browser is older than my grandmother's fashionable bloomers."); // DIED
             });
         </script>
