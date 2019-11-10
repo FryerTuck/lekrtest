@@ -4,8 +4,7 @@
 > **Note:** the scripts related to this project is in the [dist folder](/lekrtest/dist/)
 > and the explanation of these scripts is in the [summery file](/lekrtest/summery.md)
 
-***
-
+## Assignment
 LekkeSlaap is looking for a new accommodation search results card specifically developed for iPhone XS. 
 The objective is to create a great looking card which would entice our customers to click through and make the booking. 
 
