@@ -5,8 +5,8 @@ The "best UX" is artibrary per user. Some users (-or propreitors & publishers) p
 How to deal with this issue is rooted in an ancient wisdom: "the middle path". I'm not a Taoist (yet); however, for this assignment "real world" limitations are assumed.
 
 #### bootstrapping
-- no ***javascript detection*** is speciied, but is required to render the best UX, hence it is assumed as necessary and included
 - no ***framework*** was specified, hence "vanilla-js" & "vanilla-css" (plain javascript & css) is assumed
+- no ***javascript detection*** is speciied, but is required to render the best UX, hence it is assumed as necessary and included
 - no ***modern browser feature detection*** is specified, hence it is assumed as necessary and included
 - no ***connection speed monitoring*** was mentioned, hence it is assumed as necessary and included; however this is only done once. Monitoring asset-size and delivery-time throughout the viitor's session in order to establish an average connection speed is outside the scope of this test and neither implied nor assumed as necessary.
 
