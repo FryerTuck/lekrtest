@@ -15,17 +15,15 @@
                 '("canvas"); let g=(!!n.getContext?(n.getContext("webgl")||n.getContext("experimental-webgl")):null); if(!g||!(g instanceof '+
                 'WebGLRenderingContext)){throw "!"}; if(btoa("jz\'")!=="anon"){throw "!"};})();';
                 
-                if(!window.addEventListener){cb(false);return;}; var n=document.createElement('script'); n.ondone=function(event,s)
+                if(!window.addEventListener){cb(false);return;}; var n=document.createElement("script"); n.ondone=function(event,s)
                 {
-                    s=this; if(s.done){window.removeEventListener('error',s.ondone,true); if(s.parentNode){s.parentNode.removeChild(s)}; return};
+                    s=this; if(s.done){window.removeEventListener("error",s.ondone,true); if(s.parentNode){s.parentNode.removeChild(s)}; return};
                     this.done=1; cb(((event&&event.error)?false:true));
                 };
                 
-                window.addEventListener('error',n.ondone,true); n.appendChild(document.createTextNode(x));
-                n.id='dbug'; document.head.appendChild(n); setTimeout(n.ondone,1);
+                window.addEventListener("error",n.ondone,true); n.appendChild(document.createTextNode(x));
+                n.id="dbug"; document.head.appendChild(n); setTimeout(n.ondone,1);
             };
-            
-            isModern(function(){});
         // --------------------------------------------------------------------------------------------------------------------------------------------
         </script>
     </head>
@@ -34,5 +32,14 @@
         <noscript id="nojs">
             <meta http-equiv="refresh" content="1; URL=/lekrtest/dist/nojs"/>
         </noscript>
+        <script>
+            var nojs = document.getElementById("nojs"); nojs.parentNode.removeChild(nojs);
+            var busy = document.getElementById("busy");
+            isModern(function(bool)
+            {
+                if(!bool){alert("This browser is older than my grandmother's fashionable bloomers."); return};
+                
+            });
+        </script>
     </body>
 </html>
