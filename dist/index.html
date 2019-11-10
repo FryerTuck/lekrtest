@@ -27,8 +27,8 @@
         // --------------------------------------------------------------------------------------------------------------------------------------------
             window.isModern.wait = setInterval(function(nojs)
             {
-                // nojs = document.getElementById("nojs"); nojs.parentNode.removeChild(nojs);
-                // if(!nojs){return}; clearInterval(window.isModern.wait); // wait for document to load
+                nojs = document.getElementById("nojs"); if(!nojs){return}; 
+                clearInterval(window.isModern.wait); nojs.parentNode.removeChild(nojs);  // wait for document to load and clean up body
 
                 // isModern(function(bool, init)
                 // {
