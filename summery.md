@@ -5,11 +5,13 @@ the "best UX" is artibrary per user. Some users (-or propreitors & publishers) p
 How to deal with this issue is rooted in an ancient Buddhist wisdom: "the middle path".
 I'm not a Buddhist (yet); however, for this assignment "real world" limitations are assumed.
 
+#### bootstrapping
+- no frameworks were specified to be used, hence "Vanilla-JS" (plain javascript) is assumed
+- no "client resource probing" (-or "bootstrapping speed test") was mentioned, hence assets are requested to satisfy a large audience
+
 #### UX Regarding images 
-*... in order of dependency*
-1. no "client resource probing" (-or "bootstrapping speed test") was mentioned and the end user may be ***data-usage-capped***
-2. the user may have an impressive piece of tech, though the network they use to connect to the internet may be less impressive, depending on location, ISP, bandwidth-cap, signal quality, etc. -especially when targeting an international audience (-or international publisher franchise)
-3. even though the ***iPhone XS*** has a screen resolution of **2436 x 1125**, images will be served at a lower resolution in order to satisfy assumed limitations
+1. the user may have an impressive piece of tech, though the network they use to connect to the internet may be less impressive, depending on location, ISP, bandwidth-cap, signal quality, etc. -especially when targeting an international audience (-or international publisher franchise)
+2. even though the ***iPhone XS*** has a screen resolution of **2436 x 1125**, images will be served at a lower resolution in order to satisfy assumed limitations
 
 JavaScript is required in order to render a better user experience; however,
 - no ***"javascript detection"*** is speciied, hence it is assumed as necessary and included
