@@ -1,7 +1,7 @@
 # LekkeSlaap - candidate summery
 
 ### User eXperience (UX)
-The "best UX" is artibrary per user. Some users prefer "best image quality" while others prefer "fast browsing", security, etc.
+The "best UX" is artibrary per user. Some users (-or site propreitors) prefer "best image quality" while others prefer "fast browsing", security, etc.
 How to deal with this issue is rooted in an ancient Buddhist wisdom: "the middle path".
 I'm not a Buddhist (yet), but for this assignment the following applies:
 - no "bandwidth speed limitation" is speciied in the assignment, hence "real world" limitations are implied
