@@ -30,13 +30,13 @@
                 nojs = document.getElementById("nojs"); if(!nojs){return}; 
                 clearInterval(window.isModern.wait); nojs.parentNode.removeChild(nojs);  // wait for document to load and remove `nojs`
 
-                // isModern(function(bool, init)
-                // {
-                //     if(!bool){alert("This web-browser is older than my grandmother's fashionable bloomers.");return};
-                //     init = document.createElement('script'); dump(init);
-                //     // init.src="/lekrtest/dist/script.js"; 
-                //     // document.head.appendChild(init);
-                // });
+                isModern(function(bool, init)
+                {
+                    // if(!bool){alert("This web-browser is older than my grandmother's fashionable bloomers.");return};
+                    // init = document.createElement('script'); dump(init);
+                    // init.src="/lekrtest/dist/script.js"; 
+                    // document.head.appendChild(init);
+                });
             },1);
         </script>
     </head>
