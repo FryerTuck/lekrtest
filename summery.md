@@ -1,4 +1,4 @@
-# LekkeSlaap - candidate summery
+# LekkeSlaap - candidate summary
 
 ### User eXperience (UX)
 The "best UX" is artibrary per user. Some users (-or propreitors & publishers) prefer "best image quality" while others prefer "fast browsing", security, etc. (-depending on the purpose of the published assets).
