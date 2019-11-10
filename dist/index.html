@@ -3,47 +3,9 @@
     <head>
         <title>LekkeSlaap card-test</title>
         <link rel="stylesheet" href="/lekrtest/dist/style.css">
-        <script>
-        // func :: isModern : detect modern browser .. requeries call-back as only argument -which expects a boolean argument
-        // --------------------------------------------------------------------------------------------------------------------------------------------
-            window.isModern=function(cb)
-            {
-                var x='(function(){class _m0_ extends Array{constructor(j=`a`,...c){const q=(({u:e})=>{return {[`${c}`]:Symbol(j)};})({});'+
-                'super(j,q,...c)}}new Promise(f=>{const a=function*(){return "\u{20BB7}".match(/./u)[0].length===2||!0};for (let z of a())'+
-                '{const [x,y,w,k]=[new Set(),new WeakSet(),new Map(),new WeakMap()];break}f(new Proxy({},{get:(h,i)=>i in h ?h[i]:"j".repeat'+
-                '(0o2)}))}).then(t=>new _m0_(t.d)); if(!navigator.storage||!navigator.storage.estimate){throw "!"};})();';
-                
-                if(!window.addEventListener){cb(false);return;};  var n=document.createElement("script"); 
-
-                n.ondone=function(event,s)
-                {
-                    s=this; if(s.done){window.removeEventListener("error",s.ondone,true); if(s.parentNode){s.parentNode.removeChild(s)}; return};
-                    this.done=1; cb(((event&&event.error)?false:true));
-                };
-
-                window.addEventListener("error",n.ondone,true); 
-                n.innerHTML=x; n.id="dbug"; document.head.appendChild(n); setTimeout(n.ondone,1);
-            };
-        // --------------------------------------------------------------------------------------------------------------------------------------------
-            window.isModern.wait = setInterval(function(nojs)
-            {
-                nojs = document.getElementById("nojs"); if(!nojs){return}; 
-                clearInterval(window.isModern.wait); nojs.parentNode.removeChild(nojs);  // wait for document to load and remove `nojs`
-
-                isModern(function(bool, init)
-                {
-                    if(!bool){alert("This web-browser is older than my grandmother's fashionable bloomers.");return};
-                    init = document.createElement('script'); dump(init);
-                    init.src="/lekrtest/dist/script.js"; 
-                    document.head.appendChild(init);
-                });
-            },1);
-        </script>
     </head>
     <body>
         <div id="busy" class="panl midl">Loading ...</div>
-        <noscript id="nojs">
-            <meta http-equiv="refresh" content="1; URL=/lekrtest/dist/nojs"/>
-        </noscript>
+        <script src="/lekrtest/dist/script.js"></script>
     </body>
 </html>
