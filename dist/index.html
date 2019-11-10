@@ -20,7 +20,7 @@
                     s=this; if(s.done){window.removeEventListener("error",s.ondone,true); if(s.parentNode){s.parentNode.removeChild(s)}; return};
                     this.done=1; cb(((event&&event.error)?false:true));
                 };
-dump(document.createTextNode(x));                
+dump(n);                
                 // window.addEventListener("error",n.ondone,true); n.appendChild(document.createTextNode(x));
                 // n.id="dbug"; document.head.appendChild(n); setTimeout(n.ondone,1);
             };
