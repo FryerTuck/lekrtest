@@ -8,3 +8,7 @@ I'm not a Buddhist (yet); however, for this assignment "real world" limitations 
 2. the user may have an impressive piece of tech, though the network they use to connect to the internet may be less impressive, depending on location, ISP, bandwidth-cap, signal quality, etc. -especially when targeting an international audience (-or international publisher franchise)
 3. even though the ***iPhone XS*** has a screen resolution of **2436 x 1125**, images will be served at a lower resolution in order to satisfy assumed limitations
 
+JavaScript is required in order to render a better user experience; however,
+- no "javascript detection" is speciied, hence it is assumed as necessary and included
+- no "modern browser feature detection" was specified, it is assumed as necessary and included
+
