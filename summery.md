@@ -6,13 +6,11 @@ How to deal with this issue is rooted in an ancient Buddhist wisdom: "the middle
 I'm not a Buddhist (yet); however, for this assignment "real world" limitations are assumed.
 
 #### bootstrapping
-- no frameworks were specified to be used, hence "Vanilla-JS" (plain javascript) is assumed
-- no "client resource probing" (-or "bootstrapping speed test") was mentioned, hence assets are requested to satisfy a large audience
+- no ***framework*** was specified, hence "vanilla-js" & "vanilla-css" (plain javascript & css) is assumed
+- no ***"javascript detection"*** is speciied, but is required to render the best UX, hence it is assumed as necessary and included
+- no ***"modern browser feature detection"*** is specified, hence it is assumed as necessary and included
+- no "client resource probing" (-or "session connection speed monitoring") was mentioned, hence some "resource-hungry" assets are acquired sparingly
 
-#### UX Regarding images 
+#### regarding images 
 1. the user may have an impressive piece of tech, though the network they use to connect to the internet may be less impressive, depending on location, ISP, bandwidth-cap, signal quality, etc. -especially when targeting an international audience (-or international publisher franchise)
 2. even though the ***iPhone XS*** has a screen resolution of **2436 x 1125**, images will be served at a lower resolution in order to satisfy assumed limitations
-
-JavaScript is required in order to render a better user experience; however,
-- no ***"javascript detection"*** is speciied, hence it is assumed as necessary and included
-- no ***"modern browser feature detection"*** is specified, hence it is assumed as necessary and included
