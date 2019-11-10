@@ -1,0 +1,16 @@
+
+/* tags :: base : view-span, base-size, base-tint
+/* ------------------------------------------------------------------------------------------------------------- */
+   html,body
+   {
+      position:relative;
+      height:100%;
+      background-color:#2e3133;
+      font-size:15px; line-height:20px;
+      font-family: Arial, Helvetica, sans-serif;
+      color:#AAA;
+      overflow:hidden;
+      padding:0px;
+      margin:0px;
+   }
+/* ------------------------------------------------------------------------------------------------------------- */
