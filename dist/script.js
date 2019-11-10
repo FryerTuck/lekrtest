@@ -24,5 +24,9 @@
 
 // tool :: (imageSlide) : proto-method that mutate containers into an image slider
 // ----------------------------------------------------------------------------------------------------------------------------
-    bake(HTMLDivElement.prototype,"imageSlide",function(){});
+    bake(HTMLDivElement.prototype,"imageSlide",function()
+    {
+        this.args = [].slice.call(arguments);
+        
+    });
 // ----------------------------------------------------------------------------------------------------------------------------
