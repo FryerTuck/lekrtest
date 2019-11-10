@@ -11,4 +11,3 @@ I'm not a Buddhist (yet); however, for this assignment "real world" limitations 
 JavaScript is required in order to render a better user experience; however,
 - no ***"javascript detection"*** is speciied, hence it is assumed as necessary and included
 - no ***"modern browser feature detection"*** is specified, hence it is assumed as necessary and included
-
