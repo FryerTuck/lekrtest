@@ -3,14 +3,7 @@
     <head>
         <title>LekkeSlaap card-test</title>
         <link rel="stylesheet" href="/lekrtest/dist/style.css">
-        <script id="init"></script>
-        <script>
-            let waiting = setInterval(()=>
-            {
-                if(!document.getElementById("busy")){return}; clearInterval(waiting);
-                document.getElementById("init").src="/lekrtest/dist/script.js";
-            },1);
-        </script>
+        <script src="/lekrtest/dist/script.js"</script>
     </head>
     <body>
         <div id="card"></div>
