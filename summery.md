@@ -6,8 +6,8 @@ How to deal with this issue is rooted in an ancient Buddhist wisdom: "the middle
 
 #### bootstrapping
 - no ***framework*** was specified, hence "vanilla-js" & "vanilla-css" (plain javascript & css) is assumed
-- no ***"javascript detection"*** is speciied, but is required to render the best UX, hence it is assumed as necessary and included
-- no ***"modern browser feature detection"*** is specified, hence it is assumed as necessary and included
+- no ***javascript detection*** is speciied, but is required to render the best UX, hence it is assumed as necessary and included
+- no ***modern browser feature detection*** is specified, hence it is assumed as necessary and included
 - no "client resource probing" (-or "session connection speed monitoring") was mentioned, hence some "resource-hungry" assets are acquired sparingly
 
 #### regarding images 
