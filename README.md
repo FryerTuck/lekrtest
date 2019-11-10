@@ -1,8 +1,9 @@
 # LekkeSlaap - candidate competency test
 > **Task:** create an accommodation search Results *'Card'*
 >
-> **Note:** the scripts related to this project is in the [dist folder](/lekrtest/dist/)
-> and the explanation of these scripts is in the [summery file](/lekrtest/summery.md)
+> **Contents:** 
+> - the scripts related to this project is in the [dist folder](/lekrtest/dist/)
+> - the explanation of these scripts is in the [summery file](/lekrtest/summery.md)
 
 ## Assignment
 LekkeSlaap is looking for a new accommodation search results card specifically developed for iPhone XS. 
