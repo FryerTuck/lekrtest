@@ -37,8 +37,8 @@
             var busy = document.getElementById("busy");
             isModern(function(bool)
             {
-                if(!bool){alert("This browser is older than my grandmother's fashionable bloomers."); return}; // DIED
-                Site.init();
+                if(bool){Site.init(); return};
+                alert("This browser is older than my grandmother's fashionable bloomers."); // DIED
             });
         </script>
     </body>
