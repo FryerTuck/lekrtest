@@ -7,7 +7,7 @@
         <script>
             let waiting = setInterval(()=>
             {
-                if(!document.getElementById("busy")){return};
+                if(!document.getElementById("busy")){return}; clearInterval(waiting);
                 document.getElementById("init").src="/lekrtest/dist/script.js";
             },1);
         </script>
