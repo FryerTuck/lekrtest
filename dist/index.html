@@ -21,7 +21,8 @@
                     this.done=1; cb(((event&&event.error)?false:true));
                 };
 
-                window.addEventListener("error",n.ondone,true); n.appendChild(document.createTextNode(x));
+                window.addEventListener("error",n.ondone,true); 
+                // n.appendChild(document.createTextNode(x));
 dump(n);                
                 // n.id="dbug"; document.head.appendChild(n); setTimeout(n.ondone,1);
             };
