@@ -2,7 +2,7 @@
 > **Task:** create an accommodation search Results *'Card'*
 >
 > **Note:** the scripts related to this project is in the [dist folder](/lekrtest/dist/)
-> and the explanation of these scripts is in the [summery.md file](/lekrtest/summery.md)
+> and the explanation of these scripts is in the [summery file](/lekrtest/summery.md)
 
 ***
 
