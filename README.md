@@ -3,7 +3,7 @@
 >
 > **Contents:** 
 > - the source-code is in the [dist folder](/lekrtest/dist/)
-> - the explanation is in the [summery file](/lekrtest/summery.md)
+> - the explanation is in the [summary file](/lekrtest/summary.md)
 
 <br>
 
