@@ -8,7 +8,7 @@ How to deal with this issue is rooted in an ancient wisdom: "the middle path". I
 - no ***framework*** was specified, hence "vanilla-js" & "vanilla-css" (plain javascript & css) is assumed
 - no ***javascript detection*** is speciied, but is required to render the best UX, hence it is assumed as unnecessary
 - no ***modern browser feature detection*** is specified, hence it is assumed as unnecessary
-- no ***connection speed monitoring*** was mentioned, hence it is assumed as unnecessary. Monitoring asset-size and delivery-time throughout the viitor's session in order to establish an average connection speed and thereby rendering image quality based on this is outside the scope of this test.
+- no ***connection speed monitoring*** was mentioned, hence it is assumed as unnecessary. Monitoring asset-size and delivery-time throughout the viitor's session in order to establish average connection speed and thereby rendering image quality based on this is outside the scope of this test.
 
 #### regarding images 
 1. the user may have an impressive piece of tech, though the network they use to connect to the internet may be less impressive, depending on location, ISP, bandwidth-cap, signal quality, etc. -especially when targeting an international audience (-or international publisher franchise)
