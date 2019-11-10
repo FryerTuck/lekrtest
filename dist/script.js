@@ -1,4 +1,4 @@
-const init = function()
+(function()
 {
     alert("olo");
-};
+}());
