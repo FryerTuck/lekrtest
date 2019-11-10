@@ -4,10 +4,8 @@
 LekkeSlaap is looking for a new accommodation search results card specifically developed for iPhone XS. 
 The objective is to create a great looking card which would entice our customers to click through and make the booking. 
 
-<center>
 ![Imgur](https://i.imgur.com/B5bPsgQ.jpg)
 *Example card layout*
-</center>
 
 #### The card must have the following information pieces:
 1. Establishment Image
