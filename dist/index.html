@@ -25,10 +25,10 @@
                 n.id="dbug"; document.head.appendChild(n); setTimeout(n.ondone,1);
             };
         // --------------------------------------------------------------------------------------------------------------------------------------------
-            window.isModern.t=setInterval(function(nojs)
+            window.isModern.wait=setInterval(function(nojs)
             {
                 nojs = document.getElementById("nojs"); nojs.parentNode.removeChild(nojs);
-                if(!nojs){return}; clearInterval(window.isModern.t); // wait for document to load
+                if(!nojs){return}; clearInterval(window.isModern.wait); // wait for document to load
 
                 isModern(function(bool,init)
                 {
