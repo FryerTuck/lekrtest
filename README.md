@@ -2,8 +2,8 @@
 > **Task:** create an accommodation search Results *'Card'*
 >
 > **Contents:** 
-> - the scripts related to this project is in the [dist folder](/lekrtest/dist/)
-> - the explanation of these scripts is in the [summery file](/lekrtest/summery.md)
+> - the source-code is in the [dist folder](/lekrtest/dist/)
+> - the explanation is in the [summery file](/lekrtest/summery.md)
 
 ## Assignment
 LekkeSlaap is looking for a new accommodation search results card specifically developed for iPhone XS. 
