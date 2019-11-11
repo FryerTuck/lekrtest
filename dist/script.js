@@ -75,13 +75,14 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     const load = function(n)
     {
-        document.getElementById("card").style.display='none';
+        document.getElementById("card").style.opacity=0;
         document.getElementById("busy").style.display='inline-block';
 
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
             resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return};
-            document.getElementById("card").preslide(JSON.parse(resp));
+            
+            // document.getElementById("card").preslide(JSON.parse(resp));
         });
     };
 // ----------------------------------------------------------------------------------------------------------------------------
