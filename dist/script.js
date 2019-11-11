@@ -35,19 +35,19 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
-        // this.style.display="none"; this.list=a; this.indx=0; this.innerHTML="";
+        this.style.display="none"; this.list=a; this.indx=0; this.innerHTML="";
         
-        // if(!this.touched)
-        // {
-        //     this.touched={bgn:0,end:0};
-        //     this.addEventListener("touchstart",function(e){this.touched.bgn=e.changedTouches[0].screenX});
-        //     this.addEventListener("touchend",function(e)
-        //     {
-        //         this.touched.end=e.changedTouches[0].screenX;
-        //         let d=((this.touched.end < this.touched.bgn)?"L":"R");
-        //         this.dispatchEvent((new CustomEvent("swiped",d)));
-        //     });
-        // };
+        if(!this.touched)
+        {
+            this.touched={bgn:0,end:0};
+            this.addEventListener("touchstart",function(e){this.touched.bgn=e.changedTouches[0].screenX});
+            this.addEventListener("touchend",function(e)
+            {
+                this.touched.end=e.changedTouches[0].screenX;
+                let d=((this.touched.end < this.touched.bgn)?"L":"R");
+                this.dispatchEvent((new CustomEvent("swiped",d)));
+            });
+        };
 
         // this.dime=getBoundingClientRect();
         // this.addEventListener("mouseup",function(e)
