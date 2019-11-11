@@ -82,7 +82,7 @@ $html = ob_get_clean();
         $html = spuf("https://www.lekkeslaap.co.za/akkommodasie/$what");
         $html = explode("<div class='swiper-wrapper' ",$html)[1]; $html=explode('      ',$html)[1];
         $html = str_replace('<div class="swiper-lazy-preloader"></div>','',trim($html));
-        $html = expo($html,'data-src="'); print_r($html); exit;
+        $html = expo($html,'data-src="','" class="'); print_r($html); exit;
         $list = [];
         $json = json_encode($list);
         die($json);
