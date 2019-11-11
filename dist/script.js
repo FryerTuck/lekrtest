@@ -41,6 +41,11 @@
         {
             this.touched={bgn:0,end:0};
             this.addEventListener('touchstart',function(e){this.touched.bgn=e.changedTouches[0].screenX});
+            this.addEventListener('touchend',function(e)
+            {
+                let d; this.touched.end=e.changedTouches[0].screenX;
+                if(this.touched.end < this.touched.bgn){d="<"};
+            });
         };
 
         document.getElementById("view").style.display='inline-block';
