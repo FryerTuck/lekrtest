@@ -45,17 +45,17 @@
             {
                 this.touched.end=e.changedTouches[0].screenX;
                 let d=((this.touched.end < this.touched.bgn)?"L":"R");
-                n=(new CustomEvent("blooparono",d)); this.dispatchEvent(n);
+                n=(new CustomEvent("swiped",d)); this.dispatchEvent(n);
             });
         };
 
         this.addEventListener("mouseup",function(e, n)
         {
             let b,m,x,d; b=this.getBoundingClientRect(); m=(b.width/2); x=(e.clientX-b.x);
-            d=((x<m)?"L":"R"); n=(new CustomEvent("blooparono",d)); this.dispatchEvent(n);
+            d=((x<m)?"L":"R"); n=(new CustomEvent("swiped",d)); this.dispatchEvent(n);
         });
 
-        this.addEventListener("blooparono",function(e){dump("olo"); dump(e.detail)});
+        this.addEventListener("swiped",function(e){dump("olo"); dump(e.detail)});
 dump(a);
         document.getElementById("card").style.display='inline-block';
         document.getElementById("busy").style.display='none';
