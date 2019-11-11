@@ -1,4 +1,18 @@
+<?php ob_start(); ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LekkeSlaap card-test</title>
+        <link rel="stylesheet" href="/lekrtest/dist/style.css">
+        <script src="/lekrtest/dist/script.js"></script>
+    </head>
+    <body>
+        <div id="busy" class="panl midl">Loading ...</div>
+    </body>
+</html>
 <?php
+
+$html = ob_get_clean();
 
 
 # dbug :: vars : USERADDR - ip address .. if no ip then the request is bogus .. get rid of unsupported requests
@@ -55,14 +69,3 @@
     header("HTTP/1.1 200 OK"); header("Content-Type: text/html"); flush();
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>LekkeSlaap card-test</title>
-        <link rel="stylesheet" href="/lekrtest/dist/style.css">
-        <script src="/lekrtest/dist/script.js"></script>
-    </head>
-    <body>
-        <div id="busy" class="panl midl">Loading ...</div>
-    </body>
-</html>
