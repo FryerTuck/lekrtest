@@ -2,16 +2,18 @@
 
     function seek($n)
     {
-        return 
+        $data = [];
+        return $data;
     }
+    
     
     if(isset($_POST['find']))
     {
-        $data = json_encode(seek($_POST['find']));
-        die($data);
+        $json = json_encode(seek($_POST['find']));
+        die($json);
     };
-?>
 
+?>
 <!DOCTYPE html>
 <html>
     <head>
