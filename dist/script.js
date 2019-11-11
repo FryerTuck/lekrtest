@@ -59,6 +59,6 @@
     (function()
     {
         window.addEventListener('hashchange',function(){load((location.hash+'').slice(1));});
-        let h=(location.hash+''); dump(h);
+        let h=(location.hash+''); if(h.length<2){return}; load(h.slice(1));
     }());
 // ----------------------------------------------------------------------------------------------------------------------------
