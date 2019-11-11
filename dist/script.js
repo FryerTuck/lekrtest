@@ -62,7 +62,6 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     const load = function(n)
     {
-        dump(n);
         document.getElementById("card").style.display='none';
         document.getElementById("busy").style.display='inline-block';
 
