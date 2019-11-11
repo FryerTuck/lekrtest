@@ -46,7 +46,9 @@
 
     window.addEventListener('hashchange',function()
     {
-        
-        dump(location.hash);
+        purl("/lekrtest/dist",{find:(location.hash+'').slice(1)},(resp)=>
+        {
+            dump(resp);
+        });
     });
 // ----------------------------------------------------------------------------------------------------------------------------
