@@ -43,7 +43,7 @@
         {
             let n=document.createElement("div"); n.className="face"; n.style.width=`${w}px`; n.style.height=`${h}px`;
             n.style.background=`url('${i}?fit=crop&w=${w}&h=${h}&bg=000000&auto=enhance,compress&q=80')`;
-            this.list[];
+            this.list[this.list.length]=n;
         });
         
 
