@@ -51,7 +51,8 @@
         die($json);
     };
 
-    $_SERVER['HALT']='true'; header("HTTP/1.1 200 OK"); header("Content-Type: text/html"); flush();
+    $_SERVER['HALT']='1'; if(envi('INTRACE')!=='GUI'){exit;};
+    header("HTTP/1.1 200 OK"); header("Content-Type: text/html"); flush();
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 ?>
 <!DOCTYPE html>
