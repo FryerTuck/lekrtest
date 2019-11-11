@@ -47,8 +47,8 @@
     {
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
-            resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return}; resp=JSON.parse(resp);
-            document.getElementById("view");
+            resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return};
+            document.getElementById("view").preslide(JSON.parse(resp));
         });
     };
 // ----------------------------------------------------------------------------------------------------------------------------
