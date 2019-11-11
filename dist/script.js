@@ -35,7 +35,12 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
-        this.style.display="none"; this.list=a; this.innerHTML=""; 
+        this.style.display="none"; this.list=a; this.indx=0; this.innerHTML="";
+        
+        if(!this.touched)
+        {
+            this.touched={bgn:0,end:0};
+        };
 
         document.getElementById("view").style.display='inline-block';
         document.getElementById("busy").style.display='none';
