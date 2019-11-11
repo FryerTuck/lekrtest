@@ -63,6 +63,7 @@
     #wrap
     {
         position:absolute;
+        white-space:nowrap;
         background:hsla(120,100%,60%,1);
         overflow:hidden;
     }
