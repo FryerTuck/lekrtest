@@ -15,11 +15,8 @@
             return r;
         };
     
-        const list = function(a)
-        {return ([].slice.call(a))};
-    
-        const dump = function()
-        {console.log.apply(console,list(arguments))};
+        const list = function(a){return ([].slice.call(a))};
+        const dump = function(){console.log.apply(console,list(arguments))};
     };
 // ----------------------------------------------------------------------------------------------------------------------------
 
