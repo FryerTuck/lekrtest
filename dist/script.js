@@ -51,9 +51,8 @@
         };
 
         this.addEventListener("swiped",function(e){dump(e.detail)});
-dump("olo");
-//         document.getElementById("card").style.display='inline-block';
-//         document.getElementById("busy").style.display='none';
+        document.getElementById("card").style.display='inline-block';
+        document.getElementById("busy").style.display='none';
     });
 // ----------------------------------------------------------------------------------------------------------------------------
 
