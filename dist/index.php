@@ -65,7 +65,7 @@ $html = ob_get_clean();
         die($json);
     };
 
-    if(!envi('INTRFACE')){die($html);}; $_SERVER['HALT']='1'; 
+    if(!envi('INTRFACE')){die($html);}; $_SERVER['HALT']='true'; 
 
     if(envi('INTRACE')==='API')
     {
