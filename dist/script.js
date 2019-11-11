@@ -49,10 +49,9 @@
             });
         };
 
-        this.dime=this.getBoundingClientRect();
         this.addEventListener("mouseup",function(e)
         {
-            let w,m,x,d; w=this.dime.width; m=(w/2); x=(e.clientX-this.dime.x);  dump(x,m);
+            let b,m,x,d; b=this.getBoundingClientRect(); m=(b.width/2); x=(e.clientX-this.dime.x);  dump(x,m);
             d=((x<m)?"L":"R"); dump(d); this.dispatchEvent((new CustomEvent("swiped",d)));
         });
 
