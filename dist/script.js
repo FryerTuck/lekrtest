@@ -54,6 +54,7 @@
         {
             let b,m,x,d; b=this.getBoundingClientRect(); m=(b.width/2); x=(e.clientX-b.x); d=((x<m)?"L":"R");
                 this.signal("swiped",d);
+                dump("yo");
             // n=(new CustomEvent("swiped",d)); this.dispatchEvent(n);
         });
 
