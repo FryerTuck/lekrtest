@@ -81,8 +81,7 @@
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
             resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return};
-            
-            // document.getElementById("card").preslide(JSON.parse(resp));
+            document.getElementById("card").preslide(JSON.parse(resp));
         });
     };
 // ----------------------------------------------------------------------------------------------------------------------------
@@ -95,7 +94,7 @@
     {
         t=setInterval(()=>
         {
-            let b=document.getElementById("card").getBoundingClientRect(); if(b.width<1){return;}; dump(b); clearInterval(t);
+            let b=document.getElementById("card").getBoundingClientRect(); if(b.width<1){return;}; clearInterval(t);
             window.addEventListener('hashchange',function(){load((location.hash+'').slice(1));});
             let h=(location.hash+''); if(h.length<2){return}; load(h.slice(1));
         },1);
