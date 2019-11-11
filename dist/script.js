@@ -35,13 +35,15 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
-        this.list=[]; this.indx=0;  this.dime=this.getBoundingClientRect(); this.innerHTML="";
-        var w,h,wrap; w=this.dime.width; h=this.dime.height; wrap=document.createElement("div"); wrap.id="wrap";
+        var s,w,h,wrap; this.list=[]; this.indx=0;  this.dime=this.getBoundingClientRect(); this.innerHTML="";
+        s=a.length; w=this.dime.width; h=this.dime.height; 
+        wrap=document.createElement("div"); wrap.id="wrap"; wrap.style.width=`${(w*s)}px`; wrap.style.height=`${h}px`;
+        
         a.forEach((i)=>
         {
-            let n=document.createElement("div"); n.className="face"; n.style.width=`${w}px`; n.style.height=`${w}px`;
-            n.style.background=`url('${i}?')`;
-            this.list
+            let n=document.createElement("div"); n.className="face"; n.style.width=`${w}px`; n.style.height=`${h}px`;
+            n.style.background=`url('${i}?fit=crop&w=${w}&h=${h}&bg=000000&auto=enhance,compress&q=80')`;
+            this.list[];
         });
         
 
