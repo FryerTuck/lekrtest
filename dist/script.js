@@ -21,8 +21,10 @@
         
         const purl = function(p,d,f, x)
         {
+            if((typeof d)!="string"){d=JSON.stringiy(d)};
             x=(new XMLHttpRequest()); x.open("POST",p); 
             x.onloadend=function(){dump(this.response);};
+            x.send(d);
         };
     };
 // ----------------------------------------------------------------------------------------------------------------------------
