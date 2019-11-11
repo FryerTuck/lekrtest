@@ -42,7 +42,7 @@
 
 
 
-// tool :: (imageSlide) : proto-method that mutate containers into an image slider
+// tool :: (imageSlide) : proto-method that mutate div-nodes into an image sliders
 // ----------------------------------------------------------------------------------------------------------------------------
     bake(HTMLDivElement.prototype,"imageSlide",function()
     {
