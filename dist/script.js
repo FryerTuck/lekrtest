@@ -43,12 +43,13 @@
 
 // init
 // ----------------------------------------------------------------------------------------------------------------------------
-
-    window.addEventListener('hashchange',function()
+    (function()
     {
+        let p,d; p=(location.href+''); d="?find="; if(p.indexOf(d)<0){return}; p=p.split(d).pop();
+
         purl("/lekrtest/dist",{find:(location.hash+'').slice(1)},(resp)=>
         {
             dump(resp.body);
         });
-    });
+    }());
 // ----------------------------------------------------------------------------------------------------------------------------
