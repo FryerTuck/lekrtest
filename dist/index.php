@@ -5,8 +5,8 @@
         $data = [];
         return $data;
     }
-    
-    
+
+
     if(isset($_POST['find']))
     {
         $json = json_encode(seek($_POST['find']));
