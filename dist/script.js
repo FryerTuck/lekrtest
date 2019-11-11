@@ -47,7 +47,7 @@
     {
         purl("/lekrtest/dist/",{find:(location.hash+'').slice(1)},(resp)=>
         {
-            // dump(resp.body);
+            dump(resp.body);
         });
     });
 
