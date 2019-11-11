@@ -36,7 +36,7 @@
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
         this.style.display="none"; this.list=a; this.indx=0; this.innerHTML="";
-        this.dime=this.getBoundingClientRect();
+        this.dime=this.getBoundingClientRect(); dump(this.dime);
         
         if(!this.touched)
         {
