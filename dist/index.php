@@ -1,42 +1,45 @@
 <?php
 
 
-
-# func :: svar : server variables .. prefix-free
+# func :: envi : server variables .. prefix-free
 # ---------------------------------------------------------------------------------------------------------------------------------------------
-    function svar($d)
+    function envi($d)
     {
         if(!is_string($d)||($d==='')){return '';};
         if(isset($_SERVER)){$v=$_SERVER;}elseif(isset($HTTP_SERVER_VARS)){$v=$HTTP_SERVER_VARS;}else{return '';};
         $l=explode(' ',$d); $s=count($l); $f=array();
         $x=array('X','HTTP','REDIRECT','REQUEST'); for($i=0; $i<$s; $i++)
         {
-             $k=$l[$i]; if(!isset($v[$k])){$w=array_values($x); do{$p=(array_shift($w)."_$k"); if(isset($v[$p])){$k=$p;break;}}while(count($w));};
-             if(!isset($v[$k])){continue;}; $q=$v[$k]; if($q&&!is_string($q)){$q=json_encode($q);}; if(is_string($q)&&(strlen($q)>0)){$f[$i]=$q;}
+            $k=$l[$i]; if(!isset($v[$k])){$w=array_values($x); do{$p=(array_shift($w)."_$k"); if(isset($v[$p])){$k=$p;break;}}while(count($w));};
+            if(!isset($v[$k])){continue;}; $q=$v[$k]; if($q&&!is_string($q)){$q=json_encode($q);}; if(is_string($q)&&(strlen($q)>0)){$f[$i]=$q;}
         };
         $c=count($f); if($s===1){if($c<1){return '';}; return $f[0];}; $r=($c/$s); return $r;
     }
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
-    function wget($uri,$uas=null,$ref=null)
-    {
-        if(!is_string($uri)){return;}; if(strpos($uri,'http')===false){return;}; if(!isee('curl')){return;}; $ipa=svar('USERADDR');
-        if(!$uas){$uas=svar('USER_AGENT');}; if(!$ref){$ref=svar('REFERER'); if(!$ref){$ref='http://example.com/index.html';}};
-        $o=array(CURLOPT_RETURNTRANSFER=>1,CURLOPT_SSL_VERIFYPEER=>false,CURLOPT_URL=>$uri,CURLOPT_USERAGENT=>$uas,CURLOPT_REFERER=>$ref);
-        $c=curl_init(); curl_setopt_array($c,$o); curl_setopt($c,CURLOPT_HTTPHEADER,array("REMOTE_ADDR: $ipa", "HTTP_X_FORWARDED_FOR: $ipa"));
-        $r=curl_exec($c); $e=null; if(!$r){$x=curl_error($c); if($x){$e=$x;};}; curl_close($c);
-        if($e){return "FAIL :: $e";}; return $r;
-    };
+# func :: spuf : simple http-request .. can be used for spoofing .. or not .. using a proxy is better for REMOTE_ADDR, blessed be the ignorant
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+   function spuf($uri,$uas=null,$ref=null)
+   {
+      if(!is_string($uri)){return;}; if(strpos($uri,'http')===false){return;}; if(!isee('curl')){return;}; $ipa=envi('USERADDR');
+      if(!$uas){$uas=envi('USER_AGENT');}; if(!$ref){$ref=envi('REFERER'); if(!$ref){$ref='http://example.com/index.html';}};
+      $o=array(CURLOPT_RETURNTRANSFER=>1,CURLOPT_SSL_VERIFYPEER=>false,CURLOPT_URL=>$uri,CURLOPT_USERAGENT=>$uas,CURLOPT_REFERER=>$ref);
+      $c=curl_init(); curl_setopt_array($c,$o); curl_setopt($c,CURLOPT_HTTPHEADER,array("REMOTE_ADDR: $ipa", "HTTP_X_FORWARDED_FOR: $ipa"));
+      $r=curl_exec($c); $e=null; if(!$r){$x=curl_error($c); if($x){$e=$x;};}; curl_close($c);
+      if($e){return "FAIL :: $e";}; return $r;
+   };
+# ---------------------------------------------------------------------------------------------------------------------------------------------
 
 
+# ---------------------------------------------------------------------------------------------------------------------------------------------
     if(isset($_POST['find']))
     {
         $what = $_POST['find'];
         $json = json_encode(wget("https://www.lekkeslaap.co.za/akkommodasie/$what"));
         die($json);
     };
-
+# ---------------------------------------------------------------------------------------------------------------------------------------------
 ?>
 <!DOCTYPE html>
 <html>
