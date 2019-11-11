@@ -43,8 +43,8 @@
             this.addEventListener('touchstart',function(e){this.touched.bgn=e.changedTouches[0].screenX});
             this.addEventListener('touchend',function(e)
             {
-                let d; this.touched.end=e.changedTouches[0].screenX;
-                if(this.touched.end < this.touched.bgn){d="<"};
+                this.touched.end=e.changedTouches[0].screenX;
+                let d=((this.touched.end < this.touched.bgn)?"L":"R");
             });
         };
 
