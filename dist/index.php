@@ -57,6 +57,24 @@ $html = ob_get_clean();
 
 
 
+# func :: expo : extract strings between strings, returns list of extracted strings
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+   function expo($t,$b,$e)
+   {
+      if(!is_string($t)||!is_string($b)||!is_string($e)||(mb_strpos($t,$b)===false)||(mb_strpos($t,$e)===false)){return;};
+      $r=[]; $m=mb_strlen($b); $n=mb_strlen($e);
+      do
+      {
+         $a=indx($t,$b,0); $i=($a+$m); $z=indx($t,$e,$i); $i++; $z=indx($t,$e,$i);
+         if(($a===null)||($z===null)){break;}; $z+=$n; $x=mb_substr($t,($a+$m),($z-$a));
+         $r[]=mb_substr($x,0,mb_strpos($x,$e)); $t=mb_substr($t,$z); if($x===false){break;};
+      }
+      while($t); return $r;
+   }
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 # ---------------------------------------------------------------------------------------------------------------------------------------------
     if(isset($_POST['find']))
     {
