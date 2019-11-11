@@ -57,10 +57,6 @@
                 let d=((this.touched.end < this.touched.bgn)?"L":"R");
                 this.dispatchEvent((new CustomEvent("swiped",{detail:d})));
             });
-            this.slide=function(d)
-            {
-                dump(d);
-            };
         };
 
         this.addEventListener("mouseup",function(e)
