@@ -88,9 +88,13 @@
 
 // init
 // ----------------------------------------------------------------------------------------------------------------------------
-    (function()
+    (function(t)
     {
-        window.addEventListener('hashchange',function(){load((location.hash+'').slice(1));});
-        let h=(location.hash+''); if(h.length<2){return}; load(h.slice(1));
+        t=setInterval(()=>
+        {
+            let b=document.getElementById("card").getBoundingClientRect(); if(b.width<1){return;}; clearInterval(t);
+            window.addEventListener('hashchange',function(){load((location.hash+'').slice(1));});
+            let h=(location.hash+''); if(h.length<2){return}; load(h.slice(1));
+        },1);
     }());
 // ----------------------------------------------------------------------------------------------------------------------------
