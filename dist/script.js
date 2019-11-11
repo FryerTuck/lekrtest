@@ -48,7 +48,8 @@
     {
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
-            dump(JSON.parse(resp.body));
+            resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return}; resp=JSON.parse(resp);
+            
         });
     };
 // ----------------------------------------------------------------------------------------------------------------------------
