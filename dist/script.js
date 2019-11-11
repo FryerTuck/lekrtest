@@ -36,7 +36,7 @@
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
         this.list=a; this.indx=0;  this.dime=this.getBoundingClientRect(); this.innerHTML="";
-        let wrap=document.createElement("div"); wrap.className="wrap";
+        let wrap=document.createElement("div"); wrap.id="wrap";
 
         if(!this.touched)
         {
