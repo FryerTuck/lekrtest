@@ -49,7 +49,7 @@
             });
         };
 
-        this.addEventListener("swipe",function(e){dump(e.detail)};
+        this.addEventListener("swiped",function(e){dump(e.detail)};
 
         document.getElementById("view").style.display='inline-block';
         document.getElementById("busy").style.display='none';
