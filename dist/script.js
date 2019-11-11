@@ -35,8 +35,15 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
-        this.list=a; this.indx=0;  this.dime=this.getBoundingClientRect(); this.innerHTML="";
-        let wrap=document.createElement("div"); wrap.id="wrap";
+        this.list=[]; this.indx=0;  this.dime=this.getBoundingClientRect(); this.innerHTML="";
+        var w,h,wrap; w=this.dime.width; h=this.dime.height; wrap=document.createElement("div"); wrap.id="wrap";
+        a.forEach((i)=>
+        {
+            let n=document.createElement("div"); n.className="face"; n.style.width=`${w}px`; n.style.height=`${w}px`;
+            n.style.background=`url('${i}?')`;
+            this.list
+        });
+        
 
         if(!this.touched)
         {
