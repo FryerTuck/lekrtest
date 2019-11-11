@@ -21,7 +21,7 @@
         
         const purl = function(p,d,f, x)
         {
-            if((typeof d)!="string"){d=JSON.stringiy(d)}; dump(d);
+            if((typeof d)!="string"){d=JSON.stringiy(d)};
             x=(new XMLHttpRequest()); x.open("POST",p); x.setRequestHeader("INTRFACE","API");
             x.onloadend=function(){f({head:{},body:this.response});}; 
             x.send(d);
