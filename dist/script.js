@@ -52,7 +52,7 @@
         this.addEventListener("mouseup",function(e, n)
         {
             let b,m,x,d; b=this.getBoundingClientRect(); m=(b.width/2); x=(e.clientX-b.x);
-            d=((x<m)?"L":"R"); n=(new CustomEvent("swiped",d)); setTimeout(()=>{this.dispatchEvent(n)},100);
+            d=((x<m)?"L":"R"); n=(new CustomEvent("swiped",d)); this.dispatchEvent(n);
         });
 
         this.addEventListener("swiped",function(e){dump("olo"); dump(e.detail)});
