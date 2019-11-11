@@ -1,5 +1,6 @@
 "use strict";
 
+
 // cond :: (tools) : only define some short-hand tools if missing
 // ----------------------------------------------------------------------------------------------------------------------------
     if((typeof dump)=="undeined")
