@@ -58,7 +58,8 @@
             // n=(new CustomEvent("swiped",d)); this.dispatchEvent(n);
         });
 
-        this.addEventListener("swiped",function(e){dump("olo"); dump(e.detail)});
+        // this.addEventListener("swiped",function(e){dump("olo"); dump(e.detail)});
+        this.listen("swiped",function(e){dump("olo"); dump(e.detail)});
 dump(a);
         document.getElementById("card").style.display='inline-block';
         document.getElementById("busy").style.display='none';
