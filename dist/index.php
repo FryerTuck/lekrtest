@@ -47,7 +47,7 @@
     if(isset($_POST['find']))
     {
         $what = $_POST['find'];
-        $json = json_encode(wget("https://www.lekkeslaap.co.za/akkommodasie/$what"));
+        $json = json_encode(spuf("https://www.lekkeslaap.co.za/akkommodasie/$what"));
         die($json);
     };
 # ---------------------------------------------------------------------------------------------------------------------------------------------
