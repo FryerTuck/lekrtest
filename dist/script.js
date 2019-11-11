@@ -21,7 +21,8 @@
         
         const purl = function(p,d,f, x)
         {
-            x=(new XMLHttpRequest()); x.open("POST",p);
+            x=(new XMLHttpRequest()); x.open("POST",p); 
+            x.onloadend=function(){dump(this.response);};
         };
     };
 // ----------------------------------------------------------------------------------------------------------------------------
