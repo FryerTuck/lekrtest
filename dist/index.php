@@ -50,6 +50,8 @@
         $json = json_encode(spuf("https://www.lekkeslaap.co.za/akkommodasie/$what"));
         die($json);
     };
+
+    header("HTTP/1.1 200 OK"); header("Content-Type: text/html"); flush();
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 ?>
 <!DOCTYPE html>
