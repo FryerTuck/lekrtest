@@ -1,3 +1,16 @@
+<?php
+
+    function seek()
+    {
+        
+    }
+    
+    if(isset($_POST['find']))
+    {
+        return seek($_POST['find']);
+    };
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
