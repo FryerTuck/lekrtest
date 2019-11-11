@@ -35,7 +35,7 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
-        a
+        this.style.display="none"; this.list=a; this.innerHTML=""; 
     });
 // ----------------------------------------------------------------------------------------------------------------------------
 
@@ -45,6 +45,9 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     const load = function(n)
     {
+        document.getElementById("view").style.display='none';
+        document.getElementById("busy").style.display='inline-block';
+
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
             resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return};
