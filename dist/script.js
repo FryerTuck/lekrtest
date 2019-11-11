@@ -51,7 +51,7 @@
 
         this.addEventListener("swiped",function(e){dump(e.detail)};
 
-        document.getElementById("view").style.display='inline-block';
+        document.getElementById("card").style.display='inline-block';
         document.getElementById("busy").style.display='none';
     });
 // ----------------------------------------------------------------------------------------------------------------------------
@@ -62,13 +62,13 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     const load = function(n)
     {
-        document.getElementById("view").style.display='none';
+        document.getElementById("card").style.display='none';
         document.getElementById("busy").style.display='inline-block';
 
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
             resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return};
-            document.getElementById("view").preslide(JSON.parse(resp));
+            document.getElementById("card").preslide(JSON.parse(resp));
         });
     };
 // ----------------------------------------------------------------------------------------------------------------------------
