@@ -92,7 +92,7 @@
     {
         t=setInterval(()=>
         {
-            let b=document.getElementById("card").getBoundingClientRect(); if(b.width<1){return;}; clearInterval(t);
+            let b=document.getElementById("card").getBoundingClientRect(); if(b.width<1){return;}; dump(b); clearInterval(t);
             window.addEventListener('hashchange',function(){load((location.hash+'').slice(1));});
             let h=(location.hash+''); if(h.length<2){return}; load(h.slice(1));
         },1);
