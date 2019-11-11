@@ -40,14 +40,16 @@
         if(!this.touched)
         {
             this.touched={bgn:0,end:0};
-            this.addEventListener('touchstart',function(e){this.touched.bgn=e.changedTouches[0].screenX});
-            this.addEventListener('touchend',function(e)
+            this.addEventListener("touchstart",function(e){this.touched.bgn=e.changedTouches[0].screenX});
+            this.addEventListener("touchend",function(e)
             {
                 this.touched.end=e.changedTouches[0].screenX;
                 let d=((this.touched.end < this.touched.bgn)?"L":"R");
                 this.dispatchEvent((new CustomEvent("swipe",d)));
             });
         };
+
+        this.addEventListener("swipe",function(e){dump(e.detail)};
 
         document.getElementById("view").style.display='inline-block';
         document.getElementById("busy").style.display='none';
