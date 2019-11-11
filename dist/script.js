@@ -49,9 +49,9 @@
                 this.dispatchEvent((new CustomEvent("swiped",d)));
             });
         };
-dump(a);
-//         this.addEventListener("swiped",function(e){dump(e.detail)};
-// dump("olo");
+
+        this.addEventListener("swiped",function(e){dump(e.detail)});
+dump("olo");
 //         document.getElementById("card").style.display='inline-block';
 //         document.getElementById("busy").style.display='none';
     });
