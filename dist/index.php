@@ -57,6 +57,16 @@ $html = ob_get_clean();
 
 
 
+# func :: indx : `mb_strpos()` short-hand that does not throw errors
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+   function indx($h,$n,$p=0)
+   {
+       if(!isset($h[$p])){return;}; $i=mb_strpos($h,$n,$p); return(($i===false)?null:$i);
+   }
+# ---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 # func :: expo : extract strings between strings, returns list of extracted strings
 # ---------------------------------------------------------------------------------------------------------------------------------------------
    function expo($t,$b,$e)
@@ -65,7 +75,7 @@ $html = ob_get_clean();
       $r=[]; $m=mb_strlen($b); $n=mb_strlen($e);
       do
       {
-         $a=strpos($t,$b,0); $i=($a+$m); $z=strpos($t,$e,$i); $i++; $z=strpos($t,$e,$i);
+         $a=indx($t,$b,0); $i=($a+$m); $i++; $z=indx($t,$e,$i);
          if(($a===null)||($z===null)){break;}; $z+=$n; $x=mb_substr($t,($a+$m),($z-$a));
          $r[]=mb_substr($x,0,mb_strpos($x,$e)); $t=mb_substr($t,$z); if($x===false){break;};
       }
