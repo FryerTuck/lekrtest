@@ -35,10 +35,7 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
-        this.list=a; this.indx=0;  this.dime=this.getBoundingClientRect(); dump(this.dime);
-        
-        this.innerHTML="";
-        
+        this.list=a; this.indx=0;  this.dime=this.getBoundingClientRect(); this.innerHTML="";
         if(!this.touched)
         {
             this.touched={bgn:0,end:0};
