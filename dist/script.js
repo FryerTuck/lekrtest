@@ -49,13 +49,13 @@
             });
         };
 
-        // this.addEventListener("mouseup",function(e)
-        // {
-        //     let b,m,x,d; b=this.getBoundingClientRect(); m=(b.width/2); x=(e.clientX-b.x);
-        //     d=((x<m)?"L":"R"); this.dispatchEvent((new CustomEvent("swiped",d)));
-        // });
+        this.addEventListener("mouseup",function(e)
+        {
+            let b,m,x,d; b=this.getBoundingClientRect(); m=(b.width/2); x=(e.clientX-b.x);
+            d=((x<m)?"L":"R"); this.dispatchEvent((new CustomEvent("swiped",d)));
+        });
 
-        this.addEventListener("swiped",function(e){dump(e.detail)});
+        this.addEventListener("swiped",function(e){dump("olo"); dump(e.detail)});
 dump(a);
         document.getElementById("card").style.display='inline-block';
         document.getElementById("busy").style.display='none';
