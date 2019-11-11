@@ -36,6 +36,7 @@
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
         this.style.display="none"; this.list=a; this.indx=0; this.innerHTML="";
+        this.dime=this.getBoundingClientRect();
         
         if(!this.touched)
         {
@@ -51,12 +52,16 @@
 
         this.addEventListener("mouseup",function(e)
         {
-            let b,m,x,d; b=this.getBoundingClientRect(); m=(b.width/2); x=(e.clientX-b.x); d=((x<m)?"L":"R");
+            let b,m,x,d; b=this.dime; m=(b.width/2); x=(e.clientX-b.x); d=((x<m)?"L":"R");
             this.dispatchEvent((new CustomEvent("swiped",{detail:d})));
         });
 
-        this.addEventListener("swiped",function(e){dump("olo"); dump(e.detail)});
-dump(a);
+        this.addEventListener("swiped",function(e)
+        {
+            let d=e.detail;
+            
+        });
+
         document.getElementById("card").style.display='inline-block';
         document.getElementById("busy").style.display='none';
     });
