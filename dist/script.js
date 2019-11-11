@@ -45,7 +45,7 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     window.addEventListener('hashchange',function()
     {
-        purl("/lekrtest/dist",{find:(location.hash+'').slice(1)},(resp)=>
+        purl("/lekrtest/dist/",{find:(location.hash+'').slice(1)},(resp)=>
         {
             // dump(resp.body);
         });
