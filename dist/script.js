@@ -35,7 +35,6 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
-
         this.style.display="none"; this.list=a; this.indx=0; this.innerHTML="";
         
         if(!this.touched)
@@ -50,7 +49,15 @@
             });
         };
 
+        this.dime=getBoundingClientRect();
+        this.addEventListener("mouseup",function(e)
+        {
+            let w,m,x,d; w=this.dime.width; m=(w/2); x=(e.clientX-this.dime.x); 
+            d=((x<m)?"L":"R"); this.dispatchEvent((new CustomEvent("swiped",d)));
+        });
+
         this.addEventListener("swiped",function(e){dump(e.detail)});
+
         document.getElementById("card").style.display='inline-block';
         document.getElementById("busy").style.display='none';
     });
