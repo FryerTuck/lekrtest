@@ -47,6 +47,6 @@
     bake(HTMLDivElement.prototype,"imageSlide",function()
     {
         this.args = list(arguments);
-        console.log();
+        dump(this.args);
     });
 // ----------------------------------------------------------------------------------------------------------------------------
