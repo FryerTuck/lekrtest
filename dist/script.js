@@ -35,8 +35,8 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
-        this.style.display="none"; this.list=a; this.indx=0; this.innerHTML="";
-        this.dime=this.getBoundingClientRect(); dump(this.dime);
+        this.style.display="none"; this.list=a; this.indx=0; 
+        this.dime=this.getBoundingClientRect(); dump(this.dime); this.innerHTML="";
         
         if(!this.touched)
         {
