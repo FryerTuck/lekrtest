@@ -3,7 +3,7 @@
 
 // cond :: (tools) : only define some short-hand tools if missing
 // ----------------------------------------------------------------------------------------------------------------------------
-    if((typeof dump)=="undeined")
+    if((typeof purl)=="undeined")
     {
         const MAIN = window; // super-global
         const VOID = (function(){}()); // undefined
@@ -18,6 +18,11 @@
     
         const list = function(a){return ([].slice.call(a))};
         const dump = function(){console.log.apply(console,list(arguments))};
+        
+        const purl = function(p,d,f, x)
+        {
+            x=(new XMLHttpRequest()); x.open("POST",p);
+        };
     };
 // ----------------------------------------------------------------------------------------------------------------------------
 
