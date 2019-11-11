@@ -61,7 +61,9 @@ $html = ob_get_clean();
     if(isset($_POST['find']))
     {
         $what = $_POST['find'];
-        $json = json_encode(spuf("https://www.lekkeslaap.co.za/akkommodasie/$what"));
+        $html = spuf("https://www.lekkeslaap.co.za/akkommodasie/$what");
+        $list = [];
+        $json = json_encode($list);
         die($json);
     };
 
