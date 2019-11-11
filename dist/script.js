@@ -52,6 +52,7 @@
         this.dime=this.getBoundingClientRect();
         this.addEventListener("mouseup",function(e)
         {
+            dump("olo");
             let w,m,x,d; w=this.dime.width; m=(w/2); x=(e.clientX-this.dime.x); 
             d=((x<m)?"L":"R"); this.dispatchEvent((new CustomEvent("swiped",d)));
         });
