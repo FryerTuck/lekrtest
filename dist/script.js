@@ -57,7 +57,7 @@
         this.addEventListener("swiped",function(e)
         {
             let d=e.detail;
-            
+            dump(d);
         });
 
         document.getElementById("card").style.opacity=1;
