@@ -61,14 +61,4 @@
         window.addEventListener('hashchange',function(){load((location.hash+'').slice(1));});
         let h=(location.hash+''); dump(h);
     }());
-
-    // (function()
-    // {
-    //     let p,d; p=(location.href+''); d="?find="; if(p.indexOf(d)<0){return}; p=p.split(d).pop();
-
-    //     purl("/lekrtest/dist",{find:p},(resp)=>
-    //     {
-    //         dump(resp.body);
-    //     });
-    // }());
 // ----------------------------------------------------------------------------------------------------------------------------
