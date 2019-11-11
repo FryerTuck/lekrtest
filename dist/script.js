@@ -36,34 +36,36 @@
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
         this.style.display="none"; this.list=a; this.indx=0; 
-        this.dime=this.getBoundingClientRect(); dump(this.dime); this.innerHTML="";
+        this.dime=this.getBoundingClientRect(); dump(this.dime); 
         
-        if(!this.touched)
-        {
-            this.touched={bgn:0,end:0};
-            this.addEventListener("touchstart",function(e){this.touched.bgn=e.changedTouches[0].screenX});
-            this.addEventListener("touchend",function(e)
-            {
-                this.touched.end=e.changedTouches[0].screenX;
-                let d=((this.touched.end < this.touched.bgn)?"L":"R");
-                this.dispatchEvent((new CustomEvent("swiped",{detail:d})));
-            });
-        };
+        // this.innerHTML="";
+        
+        // if(!this.touched)
+        // {
+        //     this.touched={bgn:0,end:0};
+        //     this.addEventListener("touchstart",function(e){this.touched.bgn=e.changedTouches[0].screenX});
+        //     this.addEventListener("touchend",function(e)
+        //     {
+        //         this.touched.end=e.changedTouches[0].screenX;
+        //         let d=((this.touched.end < this.touched.bgn)?"L":"R");
+        //         this.dispatchEvent((new CustomEvent("swiped",{detail:d})));
+        //     });
+        // };
 
-        this.addEventListener("mouseup",function(e)
-        {
-            let b,m,x,d; b=this.dime; m=(b.width/2); x=(e.clientX-b.x); d=((x<m)?"L":"R");
-            this.dispatchEvent((new CustomEvent("swiped",{detail:d})));
-        });
+        // this.addEventListener("mouseup",function(e)
+        // {
+        //     let b,m,x,d; b=this.dime; m=(b.width/2); x=(e.clientX-b.x); d=((x<m)?"L":"R");
+        //     this.dispatchEvent((new CustomEvent("swiped",{detail:d})));
+        // });
 
-        this.addEventListener("swiped",function(e)
-        {
-            let d=e.detail;
+        // this.addEventListener("swiped",function(e)
+        // {
+        //     let d=e.detail;
             
-        });
+        // });
 
-        document.getElementById("card").style.display='inline-block';
-        document.getElementById("busy").style.display='none';
+        // document.getElementById("card").style.display='inline-block';
+        // document.getElementById("busy").style.display='none';
     });
 // ----------------------------------------------------------------------------------------------------------------------------
 
