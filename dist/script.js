@@ -56,10 +56,11 @@
 
 // init
 // ----------------------------------------------------------------------------------------------------------------------------
-    window.addEventListener('hashchange',function()
+    (function()
     {
-        load((location.hash+'').slice(1));
-    });
+        window.addEventListener('hashchange',function(){load((location.hash+'').slice(1));});
+        let h=(location.hash+''); dump(h);
+    }());
 
     // (function()
     // {
