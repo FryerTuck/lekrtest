@@ -51,7 +51,7 @@
         die($json);
     };
 
-    define('HALT',1); header("HTTP/1.1 200 OK"); header("Content-Type: text/html"); flush(); 
+    $_SERVER['HALT']='1'; header("HTTP/1.1 200 OK"); header("Content-Type: text/html"); flush(); 
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 ?>
 <!DOCTYPE html>
