@@ -45,8 +45,7 @@
             {
                 this.touched.end=e.changedTouches[0].screenX;
                 let d=((this.touched.end < this.touched.bgn)?"L":"R");
-                this.signal("swiped",d);
-                // n=(new CustomEvent("swiped",d)); this.dispatchEvent(n);
+                n=(new CustomEvent("swiped",d)); this.dispatchEvent(n);
             });
         };
 
