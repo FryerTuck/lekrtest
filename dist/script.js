@@ -40,6 +40,7 @@
         if(!this.touched)
         {
             this.touched={bgn:0,end:0};
+            this.addEventListener('touchstart',function(e){this.touched.bgn=e.changedTouches[0].screenX});
         };
 
         document.getElementById("view").style.display='inline-block';
