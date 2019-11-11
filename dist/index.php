@@ -63,7 +63,7 @@ $html = ob_get_clean();
         $what = $_POST['find'];
         $html = spuf("https://www.lekkeslaap.co.za/akkommodasie/$what");
         $html = explode("<div class='swiper-wrapper' ",$html)[1]; $html=explode('      ',$html)[1];
-        // $html = explode("</div>      </div>",$html)[0];
+        $html = str_replace('<div class="swiper-lazy-preloader"></div>','',$html);
         die($html);
         $list = [];
         $json = json_encode($list);
