@@ -88,7 +88,7 @@
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
             resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return};
-            document.getElementById("card").preslide(JSON.parse(resp));
+            document.getElementById("wrap").preslide(JSON.parse(resp));
         });
     };
 // ----------------------------------------------------------------------------------------------------------------------------
