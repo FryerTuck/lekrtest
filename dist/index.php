@@ -1,13 +1,14 @@
 <?php
 
-    function seek()
+    function seek($n)
     {
-        
+        return 
     }
     
     if(isset($_POST['find']))
     {
-        return seek($_POST['find']);
+        $data = json_encode(seek($_POST['find']));
+        die($data);
     };
 ?>
 
