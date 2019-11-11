@@ -31,12 +31,11 @@
 
 
 
-// tool :: (imageSlide) : proto-method that mutate div-nodes into an image sliders
+// tool :: (preslide) : proto-method that mutate div-nodes into image sliders
 // ----------------------------------------------------------------------------------------------------------------------------
-    bake(HTMLDivElement.prototype,"imageSlide",function()
+    bake(HTMLDivElement.prototype,"preslide",function(a)
     {
-        this.args = list(arguments);
-        dump(this.args);
+        a
     });
 // ----------------------------------------------------------------------------------------------------------------------------
 
@@ -49,7 +48,7 @@
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
             resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return}; resp=JSON.parse(resp);
-            dump(resp);
+            document.getElementById("view");
         });
     };
 // ----------------------------------------------------------------------------------------------------------------------------
