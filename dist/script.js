@@ -23,7 +23,7 @@
         {
             if((typeof d)!="string"){d=JSON.stringiy(d)};
             x=(new XMLHttpRequest()); x.open("POST",p); x.setRequestHeader("INTRFACE","API");
-            x.onloadend=function(){f(this.response);}; 
+            x.onloadend=function(){f({head:{},body:this.response});}; 
             x.send(d);
         };
     };
