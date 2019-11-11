@@ -65,7 +65,7 @@ $html = ob_get_clean();
       $r=[]; $m=mb_strlen($b); $n=mb_strlen($e);
       do
       {
-         $a=indx($t,$b,0); $i=($a+$m); $z=indx($t,$e,$i); $i++; $z=indx($t,$e,$i);
+         $a=strpos($t,$b,0); $i=($a+$m); $z=strpos($t,$e,$i); $i++; $z=strpos($t,$e,$i);
          if(($a===null)||($z===null)){break;}; $z+=$n; $x=mb_substr($t,($a+$m),($z-$a));
          $r[]=mb_substr($x,0,mb_strpos($x,$e)); $t=mb_substr($t,$z); if($x===false){break;};
       }
