@@ -78,7 +78,7 @@
 
 
 
-// unc :: load : prepare & render speciied accommodation target
+// func :: load : prepare & render speciied accommodation target
 // ----------------------------------------------------------------------------------------------------------------------------
     const load = function(n)
     {
