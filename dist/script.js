@@ -41,18 +41,18 @@
         {
             this.touched={bgn:0,end:0};
             this.addEventListener("touchstart",function(e){this.touched.bgn=e.changedTouches[0].screenX});
-            this.addEventListener("touchend",function(e)
+            this.addEventListener("touchend",function(e, n)
             {
                 this.touched.end=e.changedTouches[0].screenX;
                 let d=((this.touched.end < this.touched.bgn)?"L":"R");
-                this.dispatchEvent((new CustomEvent("swiped",d)));
+                n=(new CustomEvent("swiped",d)); this.dispatchEvent(n);
             });
         };
 
-        this.addEventListener("mouseup",function(e)
+        this.addEventListener("mouseup",function(e, n)
         {
             let b,m,x,d; b=this.getBoundingClientRect(); m=(b.width/2); x=(e.clientX-b.x);
-            d=((x<m)?"L":"R"); this.dispatchEvent((new CustomEvent("swiped",d)));
+            d=((x<m)?"L":"R"); n=(new CustomEvent("swiped",d)); this.dispatchEvent(n);
         });
 
         this.addEventListener("swiped",function(e){dump("olo"); dump(e.detail)});
