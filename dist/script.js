@@ -36,6 +36,9 @@
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
         this.style.display="none"; this.list=a; this.innerHTML=""; 
+
+        document.getElementById("view").style.display='inline-block';
+        document.getElementById("busy").style.display='none';
     });
 // ----------------------------------------------------------------------------------------------------------------------------
 
