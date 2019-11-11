@@ -65,7 +65,12 @@ $html = ob_get_clean();
         die($json);
     };
 
-    $_SERVER['HALT']='1'; if(envi('INTRACE')!=='GUI'){exit;};
-    header("HTTP/1.1 200 OK"); header("Content-Type: text/html"); flush();
+    if(!envi(INTRFACE)){die($html);}; $_SERVER['HALT']='1'; 
+
+    if(envi('INTRACE')==='API')
+    {
+        header("HTTP/1.1 200 OK"); header("Content-Type: text/html"); flush();
+        echo $html;
+    };
 # ---------------------------------------------------------------------------------------------------------------------------------------------
 ?>
