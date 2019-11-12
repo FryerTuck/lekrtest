@@ -35,8 +35,9 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
-        var s,w,h; this.dime=this.parentNode.parentNode.getBoundingClientRect(); this.innerHTML="";
-        s=a.length; w=this.dime.width; h=this.dime.height; 
+        var s,w,h; this.dime=this.parentNode.parentNode.getBoundingClientRect(); 
+        this.dime.height+=14; s=a.length; w=this.dime.width; h=this.dime.height; 
+        this.innerHTML=""; this.parentNode.style.height=`${h}px`; 
         this.style.width=`${(w*s)}px`; this.style.height=`${h}px`;
 dump(this.dime);
         a.forEach((i)=>
