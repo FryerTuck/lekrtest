@@ -7,11 +7,7 @@
         <script src="/lekrtest/dist/script.js"></script>
     </head>
     <body>
-        <div id="card">
-            <div id="hold">
-                <div id="span"></div>
-            </div>
-        </div>
+        <div id="card"><div id="hold"><div id="span"></div></div></div>
         <div id="busy" class="panl midl">Loading ...</div>
     </body>
 </html>
