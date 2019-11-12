@@ -54,7 +54,7 @@
             prnt.addEventListener("scroll",function(e)
             {
                 if(this.wait!=-1){clearTimeout(this.wait)};
-                this.wait=setTimeout(150,()=>
+                this.wait=setTimeout(500,()=>
                 {
                     dump("done");
                     // let posi,indx; posi=this.scrollLeft; indx=Math.round(posi/this.info.wide);
