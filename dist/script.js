@@ -39,7 +39,7 @@
         this.dime.height+=14; s=a.length; w=this.dime.width; h=this.dime.height; 
         this.innerHTML=""; this.parentNode.style.height=`${h}px`; 
         this.style.width=`${(w*s)}px`; this.style.height=`${h}px`;
-dump(prnt);
+
         a.forEach((i)=>
         {
             let n=document.createElement("div"); n.className="face"; n.style.width=`${w}px`; n.style.height=`${h}px`;
@@ -48,29 +48,11 @@ dump(prnt);
         });
         
 
-        if(!this.touched)
+        if(!prnt.grab)
         {
-            this.touched={bgn:0,end:0};
-            this.addEventListener("touchstart",function(e){this.touched.bgn=e.changedTouches[0].screenX});
-            this.addEventListener("touchend",function(e)
-            {
-                this.touched.end=e.changedTouches[0].screenX;
-                let d=((this.touched.end < this.touched.bgn)?"L":"R");
-                this.dispatchEvent((new CustomEvent("swiped",{detail:d})));
-            });
+            prnt.grab=1;
+            
         };
-
-        this.addEventListener("mouseup",function(e)
-        {
-            let b,m,x,d; b=this.dime; m=(b.width/2); x=(e.clientX-b.x); d=((x<m)?"L":"R");
-            this.dispatchEvent((new CustomEvent("swiped",{detail:d})));
-        });
-
-        this.addEventListener("swiped",function(e)
-        {
-            let d=e.detail;
-            dump(d);
-        });
 
         document.getElementById("card").style.opacity=1;
         document.getElementById("busy").style.display='none';
