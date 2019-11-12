@@ -35,45 +35,44 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
-dump("olo");
-//         var s,w,h; this.dime=this.getBoundingClientRect(); this.innerHTML="";
-//         s=a.length; w=this.dime.width; h=this.dime.height; 
-//         this.style.width=`${(w*s)}px`; this.style.height=`${h}px`;
-// dump(a);
-//         a.forEach((i)=>
-//         {
-//             let n=document.createElement("div"); n.className="face"; n.style.width=`${w}px`; n.style.height=`${h}px`;
-//             n.style.background=`url('${i}?fit=crop&w=${w}&h=${h}&bg=000000&auto=enhance,compress&q=80')`;
-//             this.appendChild(n);
-//         });
+        var s,w,h; this.dime=this.getBoundingClientRect(); this.innerHTML="";
+        s=a.length; w=this.dime.width; h=this.dime.height; 
+        this.style.width=`${(w*s)}px`; this.style.height=`${h}px`;
+dump(a);
+        a.forEach((i)=>
+        {
+            let n=document.createElement("div"); n.className="face"; n.style.width=`${w}px`; n.style.height=`${h}px`;
+            n.style.background=`url('${i}?fit=crop&w=${w}&h=${h}&bg=000000&auto=enhance,compress&q=80')`;
+            this.appendChild(n);
+        });
         
 
-//         if(!this.touched)
-//         {
-//             this.touched={bgn:0,end:0};
-//             this.addEventListener("touchstart",function(e){this.touched.bgn=e.changedTouches[0].screenX});
-//             this.addEventListener("touchend",function(e)
-//             {
-//                 this.touched.end=e.changedTouches[0].screenX;
-//                 let d=((this.touched.end < this.touched.bgn)?"L":"R");
-//                 this.dispatchEvent((new CustomEvent("swiped",{detail:d})));
-//             });
-//         };
+        if(!this.touched)
+        {
+            this.touched={bgn:0,end:0};
+            this.addEventListener("touchstart",function(e){this.touched.bgn=e.changedTouches[0].screenX});
+            this.addEventListener("touchend",function(e)
+            {
+                this.touched.end=e.changedTouches[0].screenX;
+                let d=((this.touched.end < this.touched.bgn)?"L":"R");
+                this.dispatchEvent((new CustomEvent("swiped",{detail:d})));
+            });
+        };
 
-//         this.addEventListener("mouseup",function(e)
-//         {
-//             let b,m,x,d; b=this.dime; m=(b.width/2); x=(e.clientX-b.x); d=((x<m)?"L":"R");
-//             this.dispatchEvent((new CustomEvent("swiped",{detail:d})));
-//         });
+        this.addEventListener("mouseup",function(e)
+        {
+            let b,m,x,d; b=this.dime; m=(b.width/2); x=(e.clientX-b.x); d=((x<m)?"L":"R");
+            this.dispatchEvent((new CustomEvent("swiped",{detail:d})));
+        });
 
-//         this.addEventListener("swiped",function(e)
-//         {
-//             let d=e.detail;
-//             dump(d);
-//         });
+        this.addEventListener("swiped",function(e)
+        {
+            let d=e.detail;
+            dump(d);
+        });
 
-//         document.getElementById("card").style.opacity=1;
-//         document.getElementById("busy").style.display='none';
+        document.getElementById("card").style.opacity=1;
+        document.getElementById("busy").style.display='none';
     });
 // ----------------------------------------------------------------------------------------------------------------------------
 
