@@ -84,7 +84,7 @@ dump(a);
     {
         document.getElementById("card").style.opacity=0;
         document.getElementById("busy").style.display='inline-block';
-dump(n);
+
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
             resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return};
