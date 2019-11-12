@@ -13,9 +13,8 @@
                 <img id="vine" class="middle" src="/lekrtest/dist/vine.png">
                 <div id="labl" class="middle"></div>
                 <div id="info" class="center">
-                    <div id="arch" class="center">v</div>
-                    <p id="text"></p>
                 </div>
+                <div id="arch" class="center">v</div>
             </div>
         </div>
         <div id="busy" class="panl cenmid">Loading ...</div>
