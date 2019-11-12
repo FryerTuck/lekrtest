@@ -64,7 +64,7 @@
             MAIN.addEventListener("resize",function()
             {
                 if(this.hold.wait!==null){clearTimeout(this.hold.wait)};
-                this.hold.wait=setTimeout(()=>
+                this.hold.style.opacity=0; this.hold.wait=setTimeout(()=>
                 {
                     let h=(location.hash+''); if(h.length<2){return}; load(h.slice(1));
                 },250);
