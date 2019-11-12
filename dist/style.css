@@ -112,6 +112,10 @@
         left:0;
         display:inline-block;
         pointer-events:none;
+        background:hsla(0,0%,90%,0.85);
+        border:1px dotted hsla(0,0%,20%,0.85);
+        border-top-right-radius:2rem;
+        padding:6px;
     }
 
     #vine
