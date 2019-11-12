@@ -57,6 +57,7 @@
                 this.wait=setTimeout(150,()=>
                 {
                     let posi,indx; posi=this.scrollLeft; indx=Math.round(posi/this.info.wide);
+                    this.scrollLeft=((indx*this.info.wide));
                 });
             });
         };
