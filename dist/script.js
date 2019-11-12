@@ -39,6 +39,7 @@
         this.dime.height+=14; s=a.length; w=this.dime.width; h=this.dime.height; prnt.info={kids:s,wide:w};
         this.innerHTML=""; this.parentNode.style.height=`${h}px`; 
         this.style.width=`${(w*s)}px`; this.style.height=`${h}px`;
+        if(!prnt.indx){prnt.indx=0};
 
         a.forEach((i,x)=>
         {
