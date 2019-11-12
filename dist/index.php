@@ -8,8 +8,8 @@
     </head>
     <body>
         <div id="card">
-            <div id="crop">
-                <div id="wrap"></div>
+            <div id="hold">
+                <div id="span"></div>
             </div>
         </div>
         <div id="busy" class="panl midl">Loading ...</div>
