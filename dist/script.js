@@ -50,11 +50,14 @@
 
         if(!prnt.grab)
         {
-            prnt.grab=1;
+            prnt.grab=1; this.wait=VOID;
             prnt.addEventListener("scroll",function(e)
             {
-                let posi,indx; posi=this.scrollLeft; indx=Math.round(posi/this.info.wide);
-                document.getElementById(`face${indx}`).scrollIntoView();
+                if(this.wait!=VOID){clearTimeout(this.wait)};
+                this.wait=setTimeout(150,()=>
+                {
+                    let posi,indx; posi=this.scrollLeft; indx=Math.round(posi/this.info.wide);
+                });
             });
         };
 
