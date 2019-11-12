@@ -113,7 +113,7 @@
         display:inline-block;
         pointer-events:none;
         background:hsla(0,0%,90%,0.85);
-        border:2px dotted hsla(0,0%,20%,0.85);
+        border:2px dotted hsla(0,0%,50%,0.85);
         border-top-right-radius:2rem;
         padding:6px;
         padding-right:24px;
