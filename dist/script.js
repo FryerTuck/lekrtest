@@ -36,7 +36,7 @@
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
         var prnt,s,w,h; prnt=this.parentNode; this.dime=prnt.parentNode.getBoundingClientRect(); 
-        this.dime.height+=14; s=a.length; this.span=s; w=this.dime.width; h=this.dime.height; 
+        this.dime.height+=14; s=a.length; prnt.span=s; w=this.dime.width; h=this.dime.height; 
         this.innerHTML=""; this.parentNode.style.height=`${h}px`; 
         this.style.width=`${(w*s)}px`; this.style.height=`${h}px`;
 
@@ -51,7 +51,10 @@
         if(!prnt.grab)
         {
             prnt.grab=1;
-            
+            prnt.addEventListener("scroll",function(e)
+            {
+                dump(this.span);
+            });
         };
 
         document.getElementById("card").style.opacity=1;
