@@ -53,7 +53,7 @@
             prnt.grab=1; this.wait=null;
             prnt.addEventListener("scroll",function(e)
             {
-                if(this.wait!==null){console.log(this.wait);clearTimeout(this.wait)};
+                if(this.wait!==null){cclearTimeout(this.wait)};
                 this.wait=setTimeout(()=>
                 {
                     dump("done");
