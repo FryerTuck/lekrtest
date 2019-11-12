@@ -39,7 +39,7 @@
         this.dime.height+=14; s=a.length; w=this.dime.width; h=this.dime.height; 
         this.innerHTML=""; this.parentNode.style.height=`${h}px`; 
         this.style.width=`${(w*s)}px`; this.style.height=`${h}px`;
-dump(this.dime);
+
         a.forEach((i)=>
         {
             let n=document.createElement("div"); n.className="face"; n.style.width=`${w}px`; n.style.height=`${h}px`;
