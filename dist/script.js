@@ -89,7 +89,7 @@ dump(a);
         {
             resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return};
 dump(resp);
-            document.getElementById("wrap").preslide(JSON.parse(resp));
+            document.getElementById("span").preslide(JSON.parse(resp));
         });
     };
 // ----------------------------------------------------------------------------------------------------------------------------
