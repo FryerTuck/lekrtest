@@ -39,7 +39,6 @@
         this.dime.height+=14; s=a.length; w=this.dime.width; h=this.dime.height; prnt.info={kids:s,wide:w};
         this.innerHTML=""; this.parentNode.style.height=`${h}px`; 
         this.style.width=`${(w*s)}px`; this.style.height=`${h}px`;
-        if(!prnt.indx){prnt.indx=0};
 
         a.forEach((i,x)=>
         {
@@ -47,7 +46,8 @@
             n.style.background=`url('${i}?fit=crop&w=${w}&h=${h}&bg=000000&auto=enhance,compress&q=80')`;
             n.id=`face${x}`; this.appendChild(n);
         });
-        
+
+        if(!prnt.indx){prnt.indx=0}; prnt.scrollLeft=(prnt.indx*w);
 
         if(!prnt.grab)
         {
