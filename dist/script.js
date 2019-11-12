@@ -54,12 +54,12 @@
             prnt.addEventListener("scroll",function(e)
             {
                 if(this.wait!==null){console.log(this.wait);clearTimeout(this.wait)};
-                this.wait=setTimeout(150,()=>
+                this.wait=setTimeout(()=>
                 {
                     dump("done");
                     // let posi,indx; posi=this.scrollLeft; indx=Math.round(posi/this.info.wide);
                     // posi=(indx*this.info.wide); dump(posi); this.scrollLeft=posi;
-                });
+                },150);
             });
         };
 
