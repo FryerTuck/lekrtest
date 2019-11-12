@@ -53,7 +53,7 @@
             prnt.grab=1;
             prnt.addEventListener("scroll",function(e)
             {
-                let sl=this.scrollLet; dump(sl);
+                let posi=this.scrollLeft; dump(posi);
             });
         };
 
