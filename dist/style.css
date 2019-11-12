@@ -78,7 +78,6 @@
     {
         position:relative;
         white-space:nowrap;
-        background:hsla(120,100%,60%,1);
         overflow-y:hidden;
         overflow-x:scroll;
     }
