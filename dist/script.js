@@ -53,7 +53,8 @@
             prnt.grab=1;
             prnt.addEventListener("scroll",function(e)
             {
-                let posi=this.scrollLeft; dump(posi);
+                let posi,indx; posi=this.scrollLeft; indx=Math.round(posi/this.info.wide);
+                dump(indx);
             });
         };
 
