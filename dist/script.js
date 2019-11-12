@@ -53,7 +53,7 @@
             prnt.grab=1;
             prnt.addEventListener("scroll",function(e)
             {
-                dump(this.span);
+                let sl=this.scrollLet; dump(sl);
             });
         };
 
