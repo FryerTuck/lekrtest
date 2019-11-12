@@ -54,7 +54,7 @@
             prnt.addEventListener("scroll",function(e)
             {
                 let posi,indx; posi=this.scrollLeft; indx=Math.round(posi/this.info.wide);
-                dump(indx);
+                document.getElementById(`face${indx}`).scrollIntoView();
             });
         };
 
