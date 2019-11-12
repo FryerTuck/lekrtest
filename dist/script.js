@@ -63,8 +63,12 @@
             
             MAIN.addEventListener("resize",function()
             {
-                let h=(location.hash+''); if(h.length<2){return}; load(h.slice(1));
-            });
+                if(this.hold.wait!==null){clearTimeout(this.hold.wait)};
+                this.hold.wait=setTimeout(()=>
+                {
+                    let h=(location.hash+''); if(h.length<2){return}; load(h.slice(1));
+                },250);
+            }.bind({hold:prnt}));
         };
 
         document.getElementById("card").style.opacity=1;
