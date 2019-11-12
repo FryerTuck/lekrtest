@@ -40,11 +40,11 @@
         this.innerHTML=""; this.parentNode.style.height=`${h}px`; 
         this.style.width=`${(w*s)}px`; this.style.height=`${h}px`;
 
-        a.forEach((i)=>
+        a.forEach((i,x)=>
         {
             let n=document.createElement("div"); n.className="face"; n.style.width=`${w}px`; n.style.height=`${h}px`;
             n.style.background=`url('${i}?fit=crop&w=${w}&h=${h}&bg=000000&auto=enhance,compress&q=80')`;
-            this.appendChild(n);
+            n.id=`face${x}`; this.appendChild(n);
         });
         
 
