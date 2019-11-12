@@ -13,7 +13,7 @@
                 <div id="labl"></div>
             </div>
         </div>
-        <div id="busy" class="panl midl">Loading ...</div>
+        <div id="busy" class="panl cenmid">Loading ...</div>
     </body>
 </html>
 <?php
