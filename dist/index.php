@@ -107,6 +107,6 @@ $html = ob_get_clean();
     if(envi('INTRFACE')==='API')
     {
         header("HTTP/1.1 200 OK"); header("Content-Type: text/html"); flush();
-        echo $html;
+        echo $html; exit;
     };
 # ---------------------------------------------------------------------------------------------------------------------------------------------
