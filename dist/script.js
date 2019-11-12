@@ -84,7 +84,7 @@ dump(a);
     {
         document.getElementById("card").style.opacity=0;
         document.getElementById("busy").style.display='inline-block';
-
+dump(n);
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
             resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return};
@@ -102,7 +102,6 @@ dump(a);
         t=setInterval(()=>
         {
             let b=document.getElementById("card").getBoundingClientRect(); if(b.width<1){return;}; clearInterval(t);
-            dump("yo");
             window.addEventListener('hashchange',function(){load((location.hash+'').slice(1));});
             let h=(location.hash+''); if(h.length<2){return}; load(h.slice(1));
         },1);
