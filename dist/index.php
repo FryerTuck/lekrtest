@@ -13,6 +13,8 @@
                 <img id="vine" class="middle" src="/lekrtest/dist/vine.png">
                 <div id="labl" class="middle"></div>
                 <div id="info" class="center">
+                    <p id="text"></p>
+                    <div id="rate"></div> <div id="cost"></div>
                 </div>
                 <div id="arch" class="center">...</div>
             </div>
