@@ -17,3 +17,10 @@ How to deal with this issue is rooted in an ancient wisdom: "the middle path". I
 
 ### A picture says a thousand words
 The primary attraction is ocussed on the images, the rest of the UI is minimal, yet functional.
+
+### Time flies when you're having fun
+Programmatically, this demo works, kindly have a look at the hand-coded scripts (JS, PHP) or more info
+Unfortunately I've ran out of time to produce a "great looking" mockup, even so, with 2 more hours I could pull in 
+- description
+- rating
+- pricing
