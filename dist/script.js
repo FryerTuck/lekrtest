@@ -38,7 +38,7 @@
         var s,w,h; this.dime=this.getBoundingClientRect(); this.innerHTML="";
         s=a.length; w=this.dime.width; h=this.dime.height; 
         this.style.width=`${(w*s)}px`; this.style.height=`${h}px`;
-dump(a);
+dump(this.dime);
         a.forEach((i)=>
         {
             let n=document.createElement("div"); n.className="face"; n.style.width=`${w}px`; n.style.height=`${h}px`;
