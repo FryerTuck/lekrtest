@@ -13,7 +13,11 @@
                 <img id="vine" class="middle" src="/lekrtest/dist/vine.png">
                 <div id="labl" class="middle"></div>
                 <div id="info" class="center">
-                    <p id="text"></p>
+                    <p id="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                        ex ea commodo consequat.
+                    </p>
                     <div id="rate"></div> <div id="cost"></div>
                 </div>
                 <div id="arch" class="center">...</div>
