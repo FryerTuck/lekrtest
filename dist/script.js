@@ -50,7 +50,7 @@
 
         if(!prnt.grab)
         {
-            prnt.grab=1; this.wait=null;
+            prnt.grab=1; prnt.wait=null;
             prnt.addEventListener("scroll",function(e)
             {
                 if(this.wait!==null){clearTimeout(this.wait)};
