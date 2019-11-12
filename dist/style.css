@@ -139,6 +139,7 @@
     {
         display:inline-block;
         width:4rem; height:2rem;
+        bottom:-3px;
         pointer-events:none;
         background:hsla(0,0%,90%,0.85);
         border:1px solid hsla(0,0%,50%,0.85);
