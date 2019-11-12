@@ -63,11 +63,11 @@
             
             MAIN.addEventListener("resize",function()
             {
+                document.getElementById("card").style.opacity=0;
+                document.getElementById("busy").style.display='inline-block';
                 if(this.hold.wait!==null){clearTimeout(this.hold.wait)};
                 this.hold.wait=setTimeout(()=>
-                {
-                    let h=(location.hash+''); if(h.length<2){return}; load(h.slice(1));
-                },250);
+                {let h=(location.hash+''); if(h.length<2){return}; load(h.slice(1));},250);
             }.bind({hold:prnt}));
         };
 
