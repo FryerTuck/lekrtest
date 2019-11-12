@@ -20,13 +20,10 @@
 
 /* clan :: (alignment) : classes to help with alignment
 /* ------------------------------------------------------------------------------------------------------------- */
-   .midl
-   {
-       position:absolute;
-       left:50%; 
-       top:50%; 
-       transform:translate(-50%,-50%);
-   }
+   .center {position:absolute !important; left:50%; transform:translate(-50%,0%);}
+   .middle {position:absolute !important; top:50%; transform:translate(0%,-50%);}
+   .cenmid {position:absolute !important; left:50%; top:50%; transform:translate(-50%,-50%);}
+   .midcen {position:absolute !important; left:50%; top:50%; transform:translate(-50%,-50%);}
 /* ------------------------------------------------------------------------------------------------------------- */
 
 
@@ -98,9 +95,20 @@
 
 
 
-/* clan :: face : explicit
+/* clan :: face : individual pictures
 /* ------------------------------------------------------------------------------------------------------------- */
     .face
+    {
+        display:inline-block;
+        position:relative;
+    }
+/* ------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* node :: labl : explicit
+/* ------------------------------------------------------------------------------------------------------------- */
+    #labl
     {
         display:inline-block;
         position:relative;
