@@ -37,7 +37,7 @@
     {
         var prnt,s,w,h; prnt=this.parentNode; this.dime=prnt.parentNode.getBoundingClientRect(); 
         this.dime.height+=14; s=a.length; w=this.dime.width; h=this.dime.height; prnt.info={kids:s,wide:w};
-        this.innerHTML=""; this.parentNode.style.height=`${h}px`; 
+        this.innerHTML=""; prnt.style.height=`${h}px`; 
         this.style.width=`${(w*s)}px`; this.style.height=`${h}px`;
 
         a.forEach((i,x)=>
