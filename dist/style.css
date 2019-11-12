@@ -116,6 +116,7 @@
         border:1px dotted hsla(0,0%,20%,0.85);
         border-top-right-radius:2rem;
         padding:6px;
+        white-space:nowrap;
     }
 
     #vine
