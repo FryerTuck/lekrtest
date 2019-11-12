@@ -35,7 +35,7 @@
 // ----------------------------------------------------------------------------------------------------------------------------
     bake(HTMLDivElement.prototype,"preslide",function(a)
     {
-        var s,w,h; this.list=[]; this.indx=0;  this.dime=this.getBoundingClientRect(); this.innerHTML="";
+        var s,w,h; this.dime=this.getBoundingClientRect(); this.innerHTML="";
         s=a.length; w=this.dime.width; h=this.dime.height; 
         this.style.width=`${(w*s)}px`; this.style.height=`${h}px`;
         
@@ -43,7 +43,7 @@
         {
             let n=document.createElement("div"); n.className="face"; n.style.width=`${w}px`; n.style.height=`${h}px`;
             n.style.background=`url('${i}?fit=crop&w=${w}&h=${h}&bg=000000&auto=enhance,compress&q=80')`;
-            this.list[this.list.length]=n;
+            this.appendChild(n);
         });
         
 
