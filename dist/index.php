@@ -10,7 +10,7 @@
         <div id="card">
             <div id="crop">
                 <div id="hold"><div id="span"></div></div>
-                <div id="labl"></div>
+                <div id="labl" class="middle"></div>
             </div>
         </div>
         <div id="busy" class="panl cenmid">Loading ...</div>
