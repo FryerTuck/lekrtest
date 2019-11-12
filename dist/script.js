@@ -60,6 +60,11 @@
                     posi=(indx*this.info.wide); this.scrollLeft=posi;
                 },150);
             });
+            
+            MAIN.addEventListener("resize",function()
+            {
+                let h=(location.hash+''); if(h.length<2){return}; load(h.slice(1));
+            });
         };
 
         document.getElementById("card").style.opacity=1;
