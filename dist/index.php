@@ -10,6 +10,7 @@
         <div id="card">
             <div id="crop">
                 <div id="hold"><div id="span"></div></div>
+                <img id="vine" class="middle" src="/lekrtest/dist/vine.png">
                 <div id="labl" class="middle"></div>
             </div>
         </div>
