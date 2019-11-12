@@ -87,6 +87,11 @@
         document.getElementById("busy").style.display='inline-block';
         document.getElementById("labl").innerHTML=n.split('-').join(' ');
         document.getElementById("info").style.display="none";
+        document.getElementById("arch").onclick=function()
+        {
+            let n,s; n=document.getElementById("info"); s=((n.style.display=="none")?"block":"none");
+            n.style.display=s;
+        };
 
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
