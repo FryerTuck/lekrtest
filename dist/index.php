@@ -103,7 +103,7 @@ $html = ob_get_clean();
     };
 
     if(!envi('INTRFACE')){die($html);}; $_SERVER['HALT']='true'; 
-print_r($_SERVER); die();
+die(envi('INTRFACE'));
     if(envi('INTRFACE')==='API')
     {
         header("HTTP/1.1 200 OK"); header("Content-Type: text/html"); flush();
