@@ -85,6 +85,7 @@
     {
         document.getElementById("card").style.opacity=0;
         document.getElementById("busy").style.display='inline-block';
+        document.getElementById("labl").innerHTML=n.split('-').join(' ');
 
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
