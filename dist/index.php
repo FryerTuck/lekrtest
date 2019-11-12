@@ -12,7 +12,7 @@
                 <div id="hold"><div id="span"></div></div>
                 <img id="vine" class="middle" src="/lekrtest/dist/vine.png">
                 <div id="labl" class="middle"></div>
-                <div id="arch" class="center"></div>
+                <div id="arch" class="center">v</div>
             </div>
         </div>
         <div id="busy" class="panl cenmid">Loading ...</div>
