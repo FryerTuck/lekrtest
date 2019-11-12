@@ -88,7 +88,6 @@ dump(a);
         purl("/lekrtest/dist/",{find:n},(resp)=>
         {
             resp=resp.body; if(!resp.startsWith("[")||!resp.endsWith("]")||(resp=="[]")){return};
-dump(resp);
             document.getElementById("span").preslide(JSON.parse(resp));
         });
     };
