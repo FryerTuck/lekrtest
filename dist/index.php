@@ -18,7 +18,7 @@
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
                         ex ea commodo consequat.
                     </p>
-                    <div id="rate"></div> <div id="cost"></div>
+                    <div id="rate">rating</div> <div id="cost">costing</div>
                 </div>
                 <div id="arch" class="center">...</div>
             </div>
