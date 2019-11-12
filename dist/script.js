@@ -56,8 +56,9 @@
                 if(this.wait!=VOID){clearTimeout(this.wait)};
                 this.wait=setTimeout(150,()=>
                 {
-                    let posi,indx; posi=this.scrollLeft; indx=Math.round(posi/this.info.wide);
-                    posi=(indx*this.info.wide); dump(posi); this.scrollLeft=posi;
+                    dump("done");
+                    // let posi,indx; posi=this.scrollLeft; indx=Math.round(posi/this.info.wide);
+                    // posi=(indx*this.info.wide); dump(posi); this.scrollLeft=posi;
                 });
             });
         };
